@@ -4,18 +4,21 @@ import time
 import logging
 from dotenv import load_dotenv
 from typing import Optional, Dict, Any
-
 # Configure logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
-
-load_dotenv()
-
-# Configuration
-LLM_PROVIDER = os.getenv("LLM_PROVIDER", "openrouter").lower()
-OPENROUTER_KEY = os.getenv("OPENROUTER_API_KEY")
-GEMINI_KEY = os.getenv("GEMINI_API_KEY")
-GROQ_KEY = os.getenv("GROQ_API_KEY")
+# Add this to the top of ai_client.py
+try:
+    from secrets_config import LLM_PROVIDER, OPENROUTER_KEY, GEMINI_KEY, GROQ_KEY
+except ImportError:
+    # Fallback for local development
+    from dotenv import load_dotenv
+    import os
+    load_dotenv()
+    LLM_PROVIDER = os.getenv("LLM_PROVIDER", "openrouter").lower()
+    OPENROUTER_KEY = os.getenv("OPENROUTER_API_KEY")
+    GEMINI_KEY = os.getenv("GEMINI_API_KEY")
+    GROQ_KEY = os.getenv("GROQ_API_KEY")
 
 # Request timeout and retry settings
 DEFAULT_TIMEOUT = 30

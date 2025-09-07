@@ -1,0 +1,540 @@
+# ===================================================================
+# HYBRID QUANTUM AI CHATBOT - GIT IGNORE RULES
+# ===================================================================
+
+# ======================
+# ENVIRONMENT & SECRETS
+# ======================
+
+# Environment variables and secrets
+.env
+.env.local
+.env.production
+.env.staging
+.env.development
+*.env
+
+# API Keys and sensitive configuration
+config/secrets.json
+secrets/
+*.key
+*.pem
+*.p12
+*.pfx
+
+# ======================
+# PYTHON
+# ======================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+test-results/
+.coverage.*
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff (if using Django)
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff (if using Flask)
+instance/
+.webassets-cache
+
+# Scrapy stuff (if using Scrapy)
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# PEP 582
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Virtual environments
+.env/
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.conda/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# ======================
+# STREAMLIT SPECIFIC
+# ======================
+
+# Streamlit cache and session files
+.streamlit/
+*/.streamlit/
+.streamlit/secrets.toml
+.streamlit/config.toml
+
+# ======================
+# QUANTUM COMPUTING
+# ======================
+
+# Qiskit cache and temporary files
+.qiskit/
+qiskit_cache/
+*.qasm
+*.qobj
+
+# IBM Quantum credentials (if using IBM Quantum)
+.qiskit/qiskitrc
+qiskit-ibm-runtime/
+.ibm-quantum/
+
+# Quantum simulation results
+quantum_results/
+simulation_cache/
+
+# ======================
+# APPLICATION SPECIFIC
+# ======================
+
+# Generated static files
+static/circuits/*.png
+static/circuits/*.jpg
+static/circuits/*.svg
+static/plots/*.png
+static/plots/*.jpg
+static/plots/*.svg
+static/temp/*
+static/exports/*.json
+static/exports/*.txt
+static/exports/*.csv
+
+# Keep directory structure but ignore contents
+static/circuits/.gitkeep
+static/plots/.gitkeep
+static/exports/.gitkeep
+static/temp/.gitkeep
+
+# Log files
+logs/
+*.log
+app.log
+quantum.log
+error.log
+debug.log
+
+# Configuration files (keep examples)
+config.json
+settings.json
+user_config.json
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+data.db
+users.db
+
+# Temporary files
+temp/
+tmp/
+*.tmp
+*.temp
+*~
+
+# Backup files
+*.bak
+*.backup
+*.old
+*.orig
+
+# ======================
+# DEVELOPMENT TOOLS
+# ======================
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Visual Studio Code
+.vscode/settings.json
+.vscode/tasks.json
+.vscode/launch.json
+.vscode/extensions.json
+
+# PyCharm
+.idea/
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# Vim
+*.swp
+*.swo
+*.swn
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# ======================
+# OPERATING SYSTEMS
+# ======================
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# ======================
+# CLOUD & DEPLOYMENT
+# ======================
+
+# Docker
+.dockerignore
+Dockerfile.local
+docker-compose.override.yml
+.docker/
+
+# Kubernetes
+k8s/secrets/
+*.kubeconfig
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+
+# AWS
+.aws/
+aws-credentials
+
+# Google Cloud
+.gcloud/
+gcloud-credentials.json
+service-account.json
+
+# Azure
+.azure/
+
+# Heroku
+.heroku/
+
+# Vercel
+.vercel
+
+# Netlify
+.netlify/
+
+# ======================
+# PACKAGE MANAGERS
+# ======================
+
+# npm (if using Node.js components)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.yarn-integrity
+package-lock.json
+yarn.lock
+
+# ======================
+# TESTING & CI/CD
+# ======================
+
+# Test outputs
+test_results/
+test_output/
+test_*.xml
+pytest.xml
+coverage.xml
+.coverage
+htmlcov/
+
+# GitHub Actions
+.github/workflows/secrets.yml
+
+# CI/CD artifacts
+artifacts/
+build_artifacts/
+
+# ======================
+# DOCUMENTATION
+# ======================
+
+# Generated documentation
+docs/build/
+docs/_build/
+site/
+_site/
+
+# ======================
+# MONITORING & ANALYTICS
+# ======================
+
+# Monitoring data
+monitoring/
+metrics/
+traces/
+
+# Analytics
+analytics/
+user_data/
+session_data/
+
+# ======================
+# CUSTOM APPLICATION FILES
+# ======================
+
+# User uploaded files
+uploads/
+user_files/
+attachments/
+
+# Session files
+sessions/
+.sessions/
+
+# Cache directories
+cache/
+.cache/
+__cache__/
+
+# Performance profiling
+*.prof
+*.profile
+profiling/
+
+# Memory dumps
+*.dmp
+*.dump
+core.*
+
+# ======================
+# SECURITY
+# ======================
+
+# Security scan results
+security_scan_results/
+vulnerability_reports/
+
+# Certificate files
+*.crt
+*.cer
+*.der
+*.p7b
+*.p7c
+*.p7s
+
+# ======================
+# QUANTUM SPECIFIC FILES
+# ======================
+
+# Large quantum simulation data
+*.quantum_data
+quantum_simulations/
+large_circuits/
+
+# Quantum hardware calibration data
+calibration_data/
+device_properties/
+
+# Quantum experiment results
+experiment_results/
+quantum_benchmarks/
+
+# ======================
+# MACHINE LEARNING
+# ======================
+
+# Model files and weights
+models/
+weights/
+checkpoints/
+*.h5
+*.pkl
+*.joblib
+*.model
+
+# Training data
+training_data/
+datasets/
+*.csv.gz
+*.parquet
+
+# ======================
+# MISC
+# ======================
+
+# Temporary directories
+scratch/
+work/
+workspace/
+
+# Archive files
+*.zip
+*.tar
+*.tar.gz
+*.tar.bz2
+*.rar
+*.7z
+
+# Large binary files
+*.bin
+*.exe
+*.dll
+
+# ======================
+# KEEP THESE FILES
+# ======================
+# Use negative patterns to keep important files
+
+# Keep example configurations
+!.env.example
+!config.example.json
+!docker-compose.example.yml
+
+# Keep important documentation
+!README.md
+!LICENSE
+!CHANGELOG.md
+!CONTRIBUTING.md
+
+# Keep test fixtures
+!tests/fixtures/
+!tests/data/
+
+# Keep static directory structure
+!static/
+!static/*/
+!static/*/.gitkeep
+
+# ======================
+# END OF .gitignore
+# ======================

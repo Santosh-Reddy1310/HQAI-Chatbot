@@ -8,7 +8,7 @@
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Status](https://img.shields.io/badge/status-production--ready-brightgreen.svg)](#)
 
-![Demo](https://via.placeholder.com/800x400/1a1a1a/ffffff?text=Hybrid+Quantum+AI+Chatbot+Demo)
+![Demo](D:\hybrid-quantum-chatbot\Demo.png)
 
 ---
 
